@@ -21,6 +21,8 @@ violatingEC2Instances = plan.filter_attribute_not_in_list(allEC2Instances,
 violations = length(violatingEC2Instances["messages"])
 
 # Main rule
+# returns True if compliant
+# returns False if non compliant
 main = rule {
   violations is 0
 }
