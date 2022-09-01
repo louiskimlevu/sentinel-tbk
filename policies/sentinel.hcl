@@ -16,3 +16,7 @@ module "tfconfig-functions" {
 #  enforcement_level = "hard-mandatory"
 # }
 
+policy "restrict-ec2-instance-type" {
+  source = "./restrict-ec2-instance-type.sentinel"
+  enforcement_level = "hard-mandatory"
+}
